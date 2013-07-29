@@ -2,6 +2,132 @@
 
 @import "reset";
 
+// Type.
+
+@font-face {
+    font-family: "Edmondsans";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/edmondsans-regular-webfont.eot');
+    src: url('/fonts/edmondsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/edmondsans-regular-webfont.woff') format('woff'),
+         url('/fonts/edmondsans-regular-webfont.ttf') format('truetype'),
+         url('/fonts/edmondsans-regular-webfont.svg#edmondsans_regularregular') format('svg');
+
+}
+
+@font-face {
+    font-family: "Edmondsans";
+    font-weight: 600;
+    font-style: normal;
+    src: url('/fonts/edmondsans-medium-webfont.eot');
+    src: url('/fonts/edmondsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/edmondsans-medium-webfont.woff') format('woff'),
+         url('/fonts/edmondsans-medium-webfont.ttf') format('truetype'),
+         url('/fonts/edmondsans-medium-webfont.svg#edmondsansmedium') format('svg');
+
+}
+
+@font-face {
+    font-family: "Edmondsans";
+    font-weight: 800;
+    font-style: normal;
+    src: url('/fonts/edmondsans-bold-webfont.eot');
+    src: url('/fonts/edmondsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/edmondsans-bold-webfont.woff') format('woff'),
+         url('/fonts/edmondsans-bold-webfont.ttf') format('truetype'),
+         url('/fonts/edmondsans-bold-webfont.svg#edmondsansbold') format('svg');
+
+}
+
+// Generic.
+body {
+  background-color: #EEDBDA;
+  color: #fff;
+  font-family: "Edmondsans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h2 {
+  font-size: 90px;
+  line-height: 100px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+h4 {
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.6);
+  display: inline-block;
+  height: 18px;
+  margin-bottom: 2px;
+}
+
+// Header.
+
+// Footer.
+footer {
+  background-color: #000;
+  background-color: rgba(0,0,0,0.83);
+  overflow: hidden;
+  // min-height: 560px;
+  .collections {
+    width: 62.66%;
+    padding: 60px 0;
+    margin: 0 2%;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+  }
+  .social,
+  .stockists,
+  .enquiries {
+    padding: 60px 0;
+    margin: 0 2%;
+    width: 12.66%;
+    float: left;
+  }
+  .about {
+    padding: 60px 0;
+    margin: 0 2%;
+    float: right;
+    width: 29.33%;
+    p {
+      max-width: 330px;
+      margin: 10px 0;
+    }
+  }
+}
+
+// Collections.
+
+.intro {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CC9390), to(#EEDBDA));
+  background: -webkit-linear-gradient(top, #CC9390, #EEDBDA);
+  background:    -moz-linear-gradient(top, #CC9390, #EEDBDA);
+  background:     -ms-linear-gradient(top, #CC9390, #EEDBDA);
+  background:      -o-linear-gradient(top, #CC9390, #EEDBDA);
+  background:         linear-gradient(top, #CC9390, #EEDBDA);
+  position: relative;
+  overflow: hidden;
+  img {
+    margin-top: 240px;
+  }
+  div {
+    position: absolute;
+    top: 140px;
+    width: 50%;
+    left: 41.66%;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-left: 5px;
+    }
+  }
+}
+
 img {
   height: auto;
 }
