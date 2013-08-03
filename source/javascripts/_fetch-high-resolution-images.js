@@ -12,22 +12,18 @@ function fetchHighResolutionImages() {
   var largeImageSourceAttribue = 'data-image-large-src';
   var isHighDensity = (window.devicePixelRatio >= 2) ? true : false;
 
-  $(window).load(function() {
-
-    if (viewpirtWidth > 750) {
-      if (isHighDensity && viewpirtWidth > 1500) {
-        $('img').each(function() {
-          var img = $(this);
-          img.attr('src', img.attr(largeImageSourceAttribue));
-        });
-      } else {
-        $('img').each(function() {
-          var img = $(this);
-          img.attr('src', img.attr(mediumImageSourceAttribute));
-        });
-      }
-    };
-
-  });
+  if (viewpirtWidth > 750) {
+    if (isHighDensity && viewpirtWidth > 1500) {
+      $('img').each(function() {
+        var img = $(this);
+        img.attr('src', img.attr(largeImageSourceAttribue));
+      });
+    } else {
+      $('img').each(function() {
+        var img = $(this);
+        img.attr('src', img.attr(mediumImageSourceAttribute));
+      });
+    }
+  };
 
 }
