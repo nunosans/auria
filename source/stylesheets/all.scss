@@ -83,10 +83,12 @@ h1 {
 
 nav.site-map {
   font-weight: 600;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 22px;
+  z-index: 20;
   h3 {
-    position: fixed;
-    top: 22px;
-    right: 22px;
     font-size: 0;
     width: 44px;
     height: 44px;
@@ -95,23 +97,18 @@ nav.site-map {
     float: right;
     clear: both;
     cursor: pointer;
-    z-index: 21;
+    background-color: rgba(21, 21, 21, 0.83);
+
   }
   ul {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
+    display: none;
+    float: right;
+    clear: both;
     width: 260px;
-    padding-top: 88px;
-    background-color: rgba(21, 21, 21, 0.8);
-    z-index: 20;
-    -webkit-transform: translateX(260px);
-    -webkit-transition-duration: 0.12s;
-    -webkit-transition-timing-function: ease-out;
+    background-color: rgba(21, 21, 21, 0.83);
   }
   li {
-    border-top: 1px solid rgba(0, 0, 0, 0.4);
+
     a {
       display: block;
       width: 100%;
@@ -119,13 +116,13 @@ nav.site-map {
       padding: 12px 22px;
 
       &:hover {
-        background-color: rgba(21, 21, 21, 0.9);
+        background-color: #000;
       }
     }
   }
   &:hover {
     ul {
-      -webkit-transform: translateX(0);
+      display: block;
     }
   }
 
