@@ -1,13 +1,15 @@
 //= require_tree .
 
+/**
+ * Calling methods.
+ */
+
 $(document).ready(function() {
 
-  $('body').stellar({
-    hideDistantElements: false,
-    parallaxBackgrounds: false
-  });
+  // Initialize Skrollr.
+  skrollr.init();
 
-})
+});
 
 $(window).load(function() {
 
