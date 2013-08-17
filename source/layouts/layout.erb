@@ -42,7 +42,9 @@
   <body class="<%= page_classes %>">
 
     <!-- Header -->
-    <h1>Auria</h1>
+    <h1 data-0="opacity: 1;" data-240="opacity: 0;">
+      Auria
+    </h1>
 
     <nav class="site-map">
       <h3>
@@ -163,7 +165,8 @@
 
     <!-- Scripts -->
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
-    <%= javascript_include_tag  "all" %>
+    <script src="/javascripts/skrollr.min.js"></script>
+    <script src="/javascripts/all.js"></script>
 
     <!-- Google Analytics
       <script type="text/javascript">
