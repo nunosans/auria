@@ -31,18 +31,42 @@ function fetchHighResolutionImages() {
     }
   };
 
-}
+};
+
+function resizeCover(el) {
+
+  var cover = $(el);
+  var viewportWidth = $(window).width();
+  var viewportHeight = $(window).height();
+
+  cover.width(viewportWidth).height(viewportHeight);
+
+};
 
 /**
  * Initializations.
  */
 
-// Initialize Skrollr.
-skrollr.init({
-  smoothScrollingDuration: 600,
-  forceHeight: false
+$(document).ready(function() {
+
+  resizeCover('.cover');
+
+  // Initialize Skrollr.
+  skrollr.init({
+    smoothScrollingDuration: 600,
+    forceHeight: false
+  });
+
 });
 
 $(window).load(function() {
+
   fetchHighResolutionImages();
+
+});
+
+$(window).resize(function() {
+
+  resizeCover('.cover');
+
 });

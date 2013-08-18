@@ -129,6 +129,12 @@ nav.site-map {
 
 }
 
+// Cover
+
+.cover {
+  overflow: hidden;
+}
+
 // Footer.
 footer {
   background-color: #000;
@@ -173,7 +179,7 @@ footer {
   background:         linear-gradient(top, #CC9390, #EEDBDA);
   position: relative;
   overflow: hidden;
-  margin-top: -10px;
+  // margin-top: -10px;
   img {
     margin-top: 240px;
     position: relative;
