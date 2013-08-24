@@ -51,10 +51,14 @@ $(document).ready(function() {
 
   resizeCover('.cover');
 
-  // Initialize Skrollr.
-  skrollr.init({
-    smoothScrollingDuration: 600,
-    forceHeight: false
+  $('.scroll-to-top').click(function(){
+    $('body').animate({scrollTop: 0}, 800);
+    return false;
+  });
+
+  $('.scroll-to-bottom').click(function(){
+    $('body').animate({scrollTop: $(document).height()}, 800);
+    return false;
   });
 
 });
@@ -62,6 +66,20 @@ $(document).ready(function() {
 $(window).load(function() {
 
   fetchHighResolutionImages();
+
+  // Initialize Skrollr.
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+   $('h1').css('position', 'absolute');
+  } else {
+    skrollr.init({
+      smoothScrollingDuration: 800,
+      forceHeight: false,
+      mobileCheck: function() {
+        return false;
+      },
+      mobileDeceleration: 0.004
+    });
+  }
 
 });
 

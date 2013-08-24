@@ -48,6 +48,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  overflow: hidden;
 }
 
 h2 {
@@ -69,13 +70,13 @@ h4 {
 
 h1 {
   position: fixed;
-  width: 520px;
-  height: 100px;
+  width: 800px;
+  height: 145px;
   left: 50%;
   top: 50%;
-  margin: -50px 0 0 -260px;
+  margin: -70px 0 0 -400px;
   background-image: url(/graphics/auria-logo.png);
-  background-size: 520px 100px;
+  background-size: 800px 145px;
   font-size: 0;
   display: block;
   z-index: 10;
@@ -232,6 +233,33 @@ img {
 
 
 // Media Queries
+
+// 900px wide screens and below.
+@media only screen and (max-width: 1200px) {
+  h1 {
+    width: 600px;
+    background-size: 600px auto;
+    margin-left: -300px;
+  }
+}
+
+// 900px wide screens and below.
+@media only screen and (max-width: 900px) {
+  h1 {
+    width: 500px;
+    background-size: 500px auto;
+    margin-left: -250px;
+  }
+}
+
+// 900px wide screens and below.
+@media only screen and (max-width: 600px) {
+  h1 {
+    width: 250px;
+    background-size: 250px auto;
+    margin-left: -125px;
+  }
+}
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
   h1 {
