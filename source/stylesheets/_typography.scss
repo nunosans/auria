@@ -1,0 +1,37 @@
+// Typography.
+
+@font-face {
+    font-family: "Edmondsans";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/edmondsans-regular-webfont.eot');
+    src: url('/fonts/edmondsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/edmondsans-regular-webfont.woff') format('woff'),
+         url('/fonts/edmondsans-regular-webfont.ttf') format('truetype'),
+         url('/fonts/edmondsans-regular-webfont.svg#edmondsans_regularregular') format('svg');
+
+}
+
+@font-face {
+    font-family: "Edmondsans";
+    font-weight: 600;
+    font-style: normal;
+    src: url('/fonts/edmondsans-medium-webfont.eot');
+    src: url('/fonts/edmondsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/edmondsans-medium-webfont.woff') format('woff'),
+         url('/fonts/edmondsans-medium-webfont.ttf') format('truetype'),
+         url('/fonts/edmondsans-medium-webfont.svg#edmondsansmedium') format('svg');
+
+}
+
+@font-face {
+    font-family: "Edmondsans";
+    font-weight: 800;
+    font-style: normal;
+    src: url('/fonts/edmondsans-bold-webfont.eot');
+    src: url('/fonts/edmondsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/edmondsans-bold-webfont.woff') format('woff'),
+         url('/fonts/edmondsans-bold-webfont.ttf') format('truetype'),
+         url('/fonts/edmondsans-bold-webfont.svg#edmondsansbold') format('svg');
+
+}

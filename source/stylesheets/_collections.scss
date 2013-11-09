@@ -1,0 +1,67 @@
+// Collections.
+
+.intro {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CC9390), to(#EEDBDA));
+  background: -webkit-linear-gradient(top, #CC9390, #EEDBDA);
+  background:    -moz-linear-gradient(top, #CC9390, #EEDBDA);
+  background:     -ms-linear-gradient(top, #CC9390, #EEDBDA);
+  background:      -o-linear-gradient(top, #CC9390, #EEDBDA);
+  background:         linear-gradient(top, #CC9390, #EEDBDA);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(204, 147, 144, 1)), to(rgba(204, 147, 144, 0)));
+  background: -webkit-linear-gradient(top, rgba(204, 147, 144, 1), rgba(204, 147, 144, 0));
+  background:    -moz-linear-gradient(top, rgba(204, 147, 144, 1), rgba(204, 147, 144, 0));
+  background:     -ms-linear-gradient(top, rgba(204, 147, 144, 1), rgba(204, 147, 144, 0));
+  background:      -o-linear-gradient(top, rgba(204, 147, 144, 1), rgba(204, 147, 144, 0));
+  background:         linear-gradient(top, rgba(204, 147, 144, 1), rgba(204, 147, 144, 0));
+  position: relative;
+  overflow: hidden;
+  // margin-top: -10px;
+  img {
+    margin-top: 240px;
+    position: relative;
+  }
+  div {
+    position: absolute;
+    top: 360px;
+    width: 41.7%;
+    left: 50%;
+    z-index: 1;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 25px;
+      margin-left: 5px;
+    }
+  }
+}
+
+.lookbook {
+  margin-bottom: 240px;
+  overflow: hidden;
+  img {
+    position: relative;
+  }
+}
+
+img {
+  height: auto;
+}
+
+.col-12 { width: 100%;  } /* Image queries:   750  |  1500  |  3000 */
+.col-11 { width: 91.7%; } /* Image queries:   750  |  1500  |  3000 */
+.col-10 { width: 83.4%; } /* Image queries:   625  |  1250  |  2500 */
+.col-9  { width: 75%;   } /* Image queries:   625  |  1250  |  2500 */
+.col-8  { width: 66.7%; } /* Image queries:   500  |  1000  |  2000 */
+.col-7  { width: 58.4%; } /* Image queries:   500  |  1000  |  2000 */
+.col-6  { width: 50%;   } /* Image queries:   375  |   750  |  1500 */
+.col-5  { width: 41.7%; } /* Image queries:   375  |   750  |  1500 */
+.col-4  { width: 33.4%; } /* Image queries:   250  |   500  |  1000 */
+
+.left-1 { left: 8.4%;   }
+.left-2 { left: 16.7%;  }
+.left-3 { left: 25%;    }
+.left-4 { left: 33.4%;  }
+.left-5 { left: 41.7%;  }
+.left-6 { left: 50%;    }
+.left-7 { left: 58.4%;  }
+.left-8 { left: 66.7%;  }

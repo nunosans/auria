@@ -1,0 +1,38 @@
+// Cover
+
+.cover {
+  overflow: hidden;
+}
+
+// Footer.
+footer {
+  background-color: #000;
+  background-color: rgba(0,0,0,0.83);
+  overflow: hidden;
+  // min-height: 560px;
+  .collections {
+    width: 62.66%;
+    padding: 60px 0;
+    margin: 0 2%;
+    float: left;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+  }
+  .social,
+  .stockists,
+  .enquiries {
+    padding: 60px 0;
+    margin: 0 2%;
+    width: 12.66%;
+    float: left;
+  }
+  .about {
+    padding: 60px 0;
+    margin: 0 2%;
+    float: right;
+    width: 29.33%;
+    p {
+      max-width: 330px;
+      margin: 10px 0;
+    }
+  }
+}

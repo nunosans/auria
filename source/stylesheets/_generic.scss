@@ -1,0 +1,26 @@
+// Generic.
+
+body {
+  background-color: #EEDBDA;
+  color: #fff;
+  font-family: "Edmondsans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  // overflow: hidden;
+}
+
+h2 {
+  font-size: 90px;
+  line-height: 100px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+h4 {
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  display: inline-block;
+  height: 18px;
+  margin-bottom: 2px;
+}

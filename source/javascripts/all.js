@@ -72,12 +72,11 @@ $(window).load(function() {
    $('h1').css('position', 'absolute');
   } else {
     skrollr.init({
-      smoothScrollingDuration: 800,
+      smoothScrollingDuration: 200,
       forceHeight: false,
       mobileCheck: function() {
         return false;
-      },
-      mobileDeceleration: 0.004
+      }
     });
   }
 
