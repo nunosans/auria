@@ -1,4 +1,4 @@
-// Nav.
+// Site navigation.
 
 nav.site-map {
   font-weight: 600;
@@ -36,12 +36,12 @@ nav.site-map {
       &:hover {
         background-color: #000;
       }
-      &.scroll-to-top:before {
+      // Add a bullet mark to the current section header.
+      &.scroll[data-target="top"]:before {
         content: "◆";
         position: absolute;
         left: 10px;
         top: 25%;
-
       }
     }
   }

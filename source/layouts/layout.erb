@@ -3,16 +3,20 @@
   <head>
     <title><%= data.page.title || "Auria" %></title>
     <!-- Meta Tags -->
-    <% partial "/partials/meta-tags" %>
+    <%= partial "/partials/meta-tags" %>
     <!-- Stylesheets -->
     <%= stylesheet_link_tag "all" %>
     <!-- Humans -->
     <link rel="author" href="/humans.txt">
   </head>
 
-  <body class="<%= page_classes %>">
+  <body>
 
     <%= yield %>
+
+    <%= partial "/partials/springboard" %>
+
+    <%= partial "/partials/footer" %>
 
     <!-- Scripts -->
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->

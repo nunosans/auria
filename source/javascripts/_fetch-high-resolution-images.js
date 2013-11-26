@@ -1,3 +1,8 @@
+/**
+ * Function to replace the image source with a source specified in a data
+ * attribute according to the screen size and pixel density.
+ */
+
 function fetchHighResolutionImages() {
 
   /**
