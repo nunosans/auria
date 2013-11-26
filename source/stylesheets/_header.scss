@@ -13,4 +13,5 @@ h1 {
   display: block;
   z-index: 1;
   pointer-events: none;
+  -webkit-transform: translate3d(0, 0, 0);
 }
