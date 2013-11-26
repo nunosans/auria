@@ -7,11 +7,13 @@
     width: 100%;
     height: auto;
     float: left;
+    -webkit-transform: translate3d(0, 0, 0);
   }
   video {
     height: 100%;
     width: auto;
     float: left;
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
 
