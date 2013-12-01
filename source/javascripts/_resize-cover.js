@@ -1,9 +1,15 @@
-function resizeCover(el) {
+/**
+ * Function that will resize a component to the total width and height
+ * of the window.
+ * el = the identifier of the component to be resized.
+ */
 
-  var cover = $(el);
+function fullBleed(el) {
+
+  var component = $(el);
   var viewportWidth = $(window).width();
   var viewportHeight = $(window).height();
 
-  cover.width(viewportWidth).height(viewportHeight);
+  component.width(viewportWidth).height(viewportHeight);
 
 };

@@ -1,15 +1,17 @@
 /**
- * Function to replace the image source with a source specified in a data
- * attribute according to the screen size and pixel density.
+ * I am using this function to replace images with higher resolution versions
+ * of that same image. All images should be loaded in the lowest resolution
+ * form and then updated to a medium or large size depending on the browser
+ * size and screen density.
  */
 
 function fetchHighResolutionImages() {
 
   /**
    * After page is loaded, check the viewport size and display density.
-   * If the window size is bigger than 750px, load the medium size assets.
+   * If the window size is bigger than 750px, load the medium size images.
    * If window size is bigger than 750px and retina, or bigger than 1500px,
-   * load the higher resolution images.
+   * load the large size images.
    */
 
   var viewpirtWidth = $(window).width();
