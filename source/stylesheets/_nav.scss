@@ -45,7 +45,8 @@ nav.site-map {
       }
     }
   }
-  &:hover {
+  &:hover,
+  &.hover {
     ul {
       display: block;
     }

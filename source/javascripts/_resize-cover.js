@@ -9,28 +9,26 @@ function fullBleed(el) {
   var component = $(el);
   var viewportWidth = $(window).width();
   var viewportHeight = $(window).height();
-
-  if (viewportHeight > viewportWidth) {
-    component.addClass('portrait');
-  } else {
-    component.removeClass('portrait');
-  }
-
+  var viewportRatio = viewportHeight / viewportWidth;
   var image = component.find('img');
-  var imageRatio = image.height() / image.width();
+  var imageWidth = image.width();
+  var imageHeight = image.height();
+  var imageRatio = imageHeight / imageWidth;
 
-  if ((viewportHeight / viewportWidth) > imageRatio){
-    image.height(viewportHeight - imageRatio + 1)
+
+  component.width(viewportWidth)
+  component.height(viewportHeight);
+
+  if (viewportRatio > imageRatio){
+    image
+      .height(viewportHeight - imageRatio + 1)
       .width(viewportHeight / imageRatio + 1)
-      .css('left', (viewportWidth - image.width()) / 2)
-      .css('top', (viewportHeight - image.height()) / 2);
+      .css('left', (viewportWidth - imageWidth) / 2);
   } else {
-    image.height(viewportWidth * imageRatio + 1)
+    image
+      .height(viewportWidth * imageRatio + 1)
       .width(viewportWidth - imageRatio + 1)
-      .css('left', (viewportWidth - image.width()) / 2)
-      .css('top', (viewportHeight - image.height()) / 2);
+      .css('top', (viewportHeight - imageHeight) / 2);
   };
-
-  component.width(viewportWidth).height(viewportHeight);
 
 };

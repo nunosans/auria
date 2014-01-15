@@ -5,9 +5,8 @@
   overflow: hidden;
   position: relative;
   img {
-    width: 100%;
-    height: auto;
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     -webkit-transform: translate3d(0, 0, 0);
@@ -18,12 +17,6 @@
     float: left;
     -webkit-transform: translate3d(0, 0, 0);
     overflow: hidden;
-  }
-  &.portrait {
-    img {
-      height: 100%;
-      width: auto;
-    }
   }
 }
 

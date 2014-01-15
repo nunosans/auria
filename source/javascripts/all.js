@@ -18,6 +18,7 @@ $(document).ready(function() {
   // Remove the video from the DOM if it's a mobile device.
   if (isItMobile) {
     $('.cover').find('video').remove();
+    $('.site-map').click($(this).toggleClass('hover'));
   };
 
   // Run these functions as soon as the page is ready and loading.
